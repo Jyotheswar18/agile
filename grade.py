@@ -1,19 +1,24 @@
 def get_grade(score):
     """Return grade based on score."""
-    if score >= 90:
+    if score >= 95:
+        return 'A+'
+    elif score >= 90:
         return 'A'
     elif score >= 80:
         return 'B'
     elif score >= 70:
-        return 'C'
+        return 'c'
     elif score >= 60:
         return 'D'
+    elif score >= 50:
+        return 'E'
     else:
         return 'F'
 
 def get_grade_description(grade):
     """Return description for grade."""
     descriptions = {
+        'A+': 'Outstanding - Exceptional performance',
         'A': 'Excellent - Very Good performance',
         'B': 'Good - Above average performance',
         'C': 'Average - Satisfactory performance',
